@@ -19,11 +19,21 @@ export function StartAttempt(): React.JSX.Element {
                 Start Quiz
             </Button>
 
-            <Button onClick={() => setStatus(false)} disabled={!status}>
+            <Button
+                onClick={() => {
+                    setStatus(false);
+                }}
+                disabled={!status}
+            >
                 Stop Quiz
             </Button>
 
-            <Button onClick={() => setAttempts(attempts + 1)} disabled={status}>
+            <Button
+                onClick={() => {
+                    setAttempts(attempts + 1);
+                }}
+                disabled={status}
+            >
                 Mulligan
             </Button>
         </div>
